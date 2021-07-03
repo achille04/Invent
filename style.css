@@ -1,0 +1,497 @@
+/*====================================
+Common Css
+======================================*/
+
+body{
+    margin: 0; background: #000;
+}
+
+
+.container{
+max-width: 960px;
+width: 96%;
+margin: 0 auto;
+}
+.content{
+	max-width: 900px;
+	width: 96%;
+	margin:0 auto;
+	}
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+
+/*====================================
+header_area Css
+======================================*/
+#header_area{
+background: #fff; border-top: 5px solid #000080; clear: both;
+}
+.inner_header{
+    overflow: hidden;
+padding: 0 30px;
+}
+.logo_area{
+    padding-top:30px;
+width: 300px;
+float: left;
+}
+.right_header_area{
+width: 590px;
+float: right;
+}
+.social_area{
+background:#000080;
+width: auto;
+float: right;
+padding: 20px 10px;
+border-radius: 0 0 15px 15px ;
+}
+.social_area ul{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: right;
+}
+.social_area ul li{
+display: inline-block;
+margin: 0 5px;
+}
+.social_area ul li a{
+display: block;
+text-decoration: none;
+}
+.social_area ul li a i{
+background: #014ae8;
+width: 35px;
+padding-top: 10px;
+color:#fff;
+font-size: 15px;
+display: block;
+text-align: center;
+height: 25px;
+border-radius: 50%;
+transition: 0.5s;
+}
+.social_area ul li a:hover{
+background:#000080 ;
+
+}
+.social_area ul li a:hover i.fa-facebook-f{
+background:#010fd6 ;
+}
+.social_area ul li a:hover i.fa-twitter{
+background:#00acee ;
+}
+.social_area ul li a:hover i.fa-pinterest{
+background:#BD081C ;
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+background:#DC4B3E;
+}
+.social_area ul li a:hover i.fa-rss{
+background:#F58023 ;
+}
+.top_menu{
+width: 100%;
+float: right;
+text-align: right;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.top_menu ul{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: right;
+}
+.top_menu ul li{
+display: inline-block;
+margin: 0 8px;
+position: relative;
+}
+.top_menu ul li::after {
+	position: absolute;
+	content: "|";
+	right: -11px;
+	top: 1px;
+	color: #000;
+}
+.top_menu ul li:last-child::after {
+	display: none;
+}
+.top_menu ul li a{
+color: #000;font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 14px;
+font-weight: normal;
+text-decoration: none;
+}
+.top_menu ul li a:hover{
+color:#6a00a7;
+}
+
+/*====================================
+Menu Area CSS
+======================================*/
+
+#main_menu{
+	background: #000080;
+	padding: 15px 0;
+}
+.inner_menu{
+min-height: 28px;
+}
+.menu_area{
+	float: left;
+	max-width: 600px;
+	width: 75%;
+	padding-top: 5px;
+}
+
+.menu_area ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+.menu_area ul li{
+	display: inline-block;
+	margin-right: 10px;
+	position: relative;
+}
+
+.menu_area ul li a{
+	font-size: 15px;
+	color: #fff;
+	padding: 5px 0;
+	font-weight: normal;
+	text-decoration: none;
+}
+.menu_area ul li a:hover{
+	color: #000000;
+}
+
+
+/*====================================
+Dropdown Menu Style
+======================================*/
+
+.menu_area ul li ul{
+	position: absolute;
+	left: -999999px;
+	top: 23px;
+	background: #000;
+	width: 200px;
+	z-index: 999999;
+}
+.menu_area ul li:hover ul{
+	left: 0;	
+}
+
+.menu_area ul ul li{
+	display: block;
+	margin-right: 0;
+	margin-bottom: 5px;
+}
+.menu_area ul ul li a{
+	display: block;
+padding: 5px;
+}
+.menu_area ul ul li a:hover{
+	background:#000080 ; 
+	color: #fff;
+}
+.menu_area ul li:hover a{
+	color: #000;
+}
+.menu_area ul li:hover ul a{
+	color: #fff;
+}
+.menu_area ul ul li:hover a{
+	background: #000080;
+}
+.menu_area ul ul li:hover ul a{
+	background: #000;
+}
+.menu_area ul ul li ul a:hover{
+	background: #000080;
+}
+
+
+/*====================================
+Step Three Dropdown Menu
+======================================*/
+.menu_area ul ul ul{
+	left: -999999px;
+	top: 0;
+}
+
+.menu_area ul li:hover ul ul{
+	left: -999999px;	
+}
+.menu_area ul li:hover ul li:hover ul{
+	left: 180px;	
+}
+
+/*====================================
+Search Area CSS
+======================================*/
+.search_area{
+	float: right;
+	max-width: 280px;
+	width: 25%;
+}
+.search_area input{
+	width: 73%;
+	padding:5px 1%;
+	border: 1px solid#ddd;
+	color: #000;
+	float: left;
+}
+.search_area input[type="submit"]{
+	width: 24%;
+	padding:5.2px 1%;
+	border: 1px solid#ddd;
+	color: #000;
+	text-transform: uppercase;
+	float: left;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.search_area input[type="submit"]:hover{
+background: #6a00a7;
+border: 1px solid #6a00a7;
+	color: #000;
+	
+}
+/*====================================
+Slider Area CSS
+======================================*/
+#slider_area{
+	background: #ffffff;
+}
+.inner_slider{
+	width: 880px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.bx-wrapper{
+	margin-bottom: 30px;
+}
+
+/*====================================
+Service Area CSS
+======================================*/
+#service_area{
+background: #ffffff;
+padding: 45px auto;
+}
+.inner_service{
+	overflow: hidden;
+}
+.child_service{
+	float: left;
+	text-align: center;
+	margin: 0 1% 10%;
+	padding: 0 1%;
+	width: 21%;
+}
+.child_service img{
+display: block;
+margin: 0 auto 15px;
+}
+.child_service h3{
+color: #81b300;
+font-size: 18px;
+font-weight: normal;
+}
+.child_service h3 a{
+color: #000080;
+text-decoration: none;
+}
+.child_service h3:hover a{
+color: #850404;
+}
+.child_service p{
+color: #888888;
+font-size: 13px;
+font-weight: normal;
+}
+
+/*====================================
+Work Area CSS
+======================================*/
+#work_area{
+background: #ffffff;
+}
+.inner_work{
+	border-top: 1px solid #e2e2e2;
+	padding: 45px 0;
+	overflow: hidden;
+}
+.child_work{
+	float: left;
+	margin: 0 1% 10px;
+	padding: 1%;
+	width: 21%; 
+}
+.child_work img{
+	border: 1px solid #e2e2e2;
+	padding: 4px; 
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.child_work h3{
+	color: #444444;
+	font-size: 18px;
+
+}
+.child_work p{
+	color: #878787;
+	font-size: 15px;
+
+}
+.child_work a{
+color: #000080;
+font-size: 15px;
+float: right;
+text-decoration: none;
+}
+.child_work a:hover{
+color: #850404;
+}
+
+/*====================================
+footer area Css
+======================================*/
+#footer_area{
+background: #000080;
+}
+.inner_footer{
+	padding: 45px 0;
+	overflow: hidden;
+}
+.child_footer{
+	color: #000080;
+	padding: 1%;
+	margin: 0 1% 10px; 
+	float: left;
+	width: 21%;
+}
+.child_footer h3{
+color: #fff;
+font-size: 18px;
+margin-top: 0;
+font-weight: bold;
+}
+.child_footer h4{
+color: #fff;
+font-size: 14px;
+margin-top: 0;
+}
+.child_footer h4 a{
+color: #ffffff;
+float: none;
+text-decoration: none;
+}
+.child_footer h4:hover a{
+color: #d80707;
+}
+.child_footer h6{
+color: #fff;
+font-size: 12px;
+margin: 0 0 10px;
+}
+.child_footer p{
+color: #999999;
+font-size: 14px;
+margin-top: 0;
+}
+.child_footer ul{
+margin: 0;
+padding: 0;
+list-style: none;
+text-align: left;
+}
+.child_footer li{
+display: block;
+border-bottom: 1px solid #ddd;
+}
+.child_footer li:last-child{
+border-bottom: 0px solid;
+}
+.child_footer ul ul{
+display: none;
+}
+.child_footer ul a{
+color: #999999;
+display: inline-block;
+float: none;
+padding: 5px 0;
+text-decoration: none;
+}
+.child_footer ul a:hover{
+color: #970606;
+}
+.child_footer a{
+color: #999999;
+display: inline-block;
+padding: 5px 0;
+text-decoration: none;
+float: right;
+}
+.child_footer a:hover{
+color: #dd0505;
+}
+.child_footer input{
+background: #fff;
+color: #999999;
+padding: 8px 2%;
+margin-bottom: 8px; 
+}
+.child_footer input[type="submit"]{
+color: #6a00a7	;
+font-size: 15px;
+padding: 5px 25px;
+cursor: pointer;
+border-radius: 5px;
+}
+.child_footer input[type="submit"]:hover{
+background: #6a00a7;
+border: 1px solid #6a00a7;
+color: #fff;
+transition: 0.5s;
+border-radius: 5px;
+}
+
+/*====================================
+Copyright area Css
+======================================*/
+#copyright_section{
+	background: #010fd6;
+}
+
+.copyright_area{
+	background: #fff;
+	color: #fff;
+	border: 1px solid;
+
+}
+.copyright_area p{
+	color: #737373;
+	font-size: 12px;
+	padding: 15px 0;
+	overflow: hidden;
+}
+.left_copyright{
+	float: left;
+	width: 60%;
+}
+.right_copyright{
+float: right;
+width: 40%;
+text-align: right;
+}
