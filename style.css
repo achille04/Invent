@@ -127,6 +127,7 @@ color: #000;font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 14px;
 font-weight: normal;
 text-decoration: none;
+transition: 2es;
 }
 .top_menu ul li a:hover{
 color:#6a00a7;
@@ -245,10 +246,11 @@ Search Area CSS
 }
 .search_area input{
 	width: 73%;
-	padding:5px 1%;
+	padding:5px 0;
 	border: 1px solid#ddd;
 	color: #000;
 	float: left;
+	font-size: 11px;
 }
 .search_area input[type="submit"]{
 	width: 24%;
